@@ -4,6 +4,7 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import AddEmployee from "./components/AddEmployee";
 import EditEmployee from "./components/EditEmployee";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [role, setRole] = useState("Dev");
@@ -51,16 +52,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App min-h-screen bg-gray-300">
+      <Navbar />
       {showEmployees ? (
         <>
-          <input
-            type="text"
-            onChange={(e) => {
-              setRole(e.target.value);
-            }}
-          />
-          <div className="flex flex-wrap justify-center">
+          <div className="my-2 flex flex-wrap justify-center">
             {employees.map((employee) => {
               const editEmployee = (
                 <EditEmployee
