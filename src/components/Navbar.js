@@ -94,7 +94,7 @@ function Navbar(props) {
         )}
       </Disclosure>
       <div className="bg-gray-300">
-        <div className="mx-auto min-h-screen max-w-7xl p-2">
+        <div className="mx-auto min-h-screen max-w-7xl p-3">
           {props.children}
         </div>
       </div>
