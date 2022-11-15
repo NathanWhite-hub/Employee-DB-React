@@ -40,12 +40,6 @@ function Navbar(props) {
                         key={item.name}
                         to={item.href}
                         href={item.href}
-                        /*className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white no-underline"
-                            : "text-gray-300 no-underline hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
-                        )}*/
                         className={({isActive}) => {
                           return ( 
                             'px-3 py-2 text-sm font-medium no-underline' + 
