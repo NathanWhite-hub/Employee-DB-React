@@ -145,6 +145,7 @@ function Navbar(props) {
             </div>
           </Disclosure.Panel>
         {props.children}
+        <footer></footer>
         </>
       )}
     </Disclosure>
