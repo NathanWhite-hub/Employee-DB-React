@@ -51,10 +51,10 @@ function Employees() {
   }
 
   return (
-    <div className="App min-h-screen bg-gray-300">
+    <div>
       {showEmployees ? (
         <>
-          <div className="my-2 flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-center">
             {employees.map((employee) => {
               const editEmployee = (
                 <EditEmployee
